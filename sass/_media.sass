@@ -1,0 +1,64 @@
+@media (max-width: 1200px)
+  .container
+    max-width: 960px
+
+  .search__button
+    position: relative
+
+  .button-icon
+    position: absolute
+    top: 14px
+    left: 16px
+
+@media (max-width: 992px)
+  .container
+    max-width: 778px
+
+  .navbar
+    &__search
+      margin-left: auto
+    &-top
+      padding: 30px 0
+
+  .logo
+    width: 133px
+  .menu
+    padding: 21px 0
+    &-item
+      &__list
+        font-size: 12px
+        line-height: 15px
+
+@media (max-width: 778px)
+  .container
+    max-width: 92%
+
+@media (max-width: 650px)
+  .navbar
+    &__search, &__profile
+      display: none
+
+  .menu-button
+    display: flex
+    align-items: center
+    justify-content: space-between
+    flex-direction: column
+    width: 16px
+    height: 11px
+    border: none
+    background-color: #fff
+    cursor: pointer
+
+    &__line
+      width: 16px
+      height: 1px
+      background-color: $text-color
+
+  .menu
+    display: none
+    // Отдельный класс для меню
+
+@media (max-width: 576px)
+  .navbar
+    &-logo
+      width: 100px
