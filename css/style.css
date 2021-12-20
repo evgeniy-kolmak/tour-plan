@@ -9,7 +9,7 @@ body {
   font-family: 'Mulish', sans-serif;
 }
 
-ul {
+ul, p {
   margin: 0;
   padding: 0;
 }
@@ -493,6 +493,96 @@ template {
 .breadcrumb-list__link {
   text-decoration: none;
   color: inherit;
+}
+
+.hotel {
+  padding: 23px 0 22px 0;
+}
+
+.hotel-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hotel-info__right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 65px;
+  height: 45px;
+  border-radius: 4px;
+  color: #fff;
+  background-color: #EC1F46;
+  padding: 9px 6px 6px 7px;
+}
+
+.hotel-info__left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.hotel-name {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+  margin: 4px 18px 4px 0;
+}
+
+.star {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+}
+
+.discription {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+}
+
+.offer {
+  font-weight: 600;
+  font-size: 10px;
+  line-height: 13px;
+  color: #fff;
+  background-color: #EC1F46;
+  padding: 3px 9px;
+  border-radius: 3px;
+}
+
+.raitting {
+  font-weight: 600;
+  font-size: 8px;
+  line-height: 10px;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  margin-bottom: 2px;
+}
+
+.raitting-couner {
+  font-weight: bold;
+  font-size: 10px;
+  line-height: 13px;
 }
 
 @media (max-width: 1200px) {
