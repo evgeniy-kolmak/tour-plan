@@ -631,6 +631,9 @@ template {
   .navbar__search, .navbar__profile {
     display: none;
   }
+  .hotel-info__right {
+    display: none;
+  }
   .menu-button {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -655,6 +658,26 @@ template {
     width: 16px;
     height: 1px;
     background-color: #333333;
+  }
+  .offer {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+  }
+  .hotel-name {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    margin-top: 10px;
+    margin-right: 0;
+  }
+  .star {
+    -ms-flex-preferred-size: auto;
+        flex-basis: auto;
+  }
+  .hotel-info__left {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
   .menu {
     display: none;

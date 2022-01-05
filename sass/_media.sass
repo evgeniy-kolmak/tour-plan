@@ -37,8 +37,10 @@
 
 @media (max-width: 650px)
   .navbar
-    &__search, &__profile
+    &__search, &__profile,
       display: none
+  .hotel-info__right
+    display: none
 
   .menu-button
     display: flex
@@ -56,6 +58,17 @@
       height: 1px
       background-color: $text-color
 
+  .offer
+    order: -1
+  .hotel-name
+    flex-basis: 100%
+    margin-top: 10px
+    margin-right: 0
+  .star
+    flex-basis: auto
+
+  .hotel-info__left
+    justify-content: space-between
   .menu
     display: none
     // Отдельный класс для меню
