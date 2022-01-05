@@ -515,13 +515,13 @@ template {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  -ms-flex-flow: wrap;
+      flex-flow: wrap;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 65px;
-  height: 45px;
+  max-width: 65px;
+  min-height: 45px;
   border-radius: 4px;
   color: #fff;
   background-color: #EC1F46;
@@ -579,10 +579,10 @@ template {
   margin-bottom: 2px;
 }
 
-.raitting-couner {
+.raitting-counter {
   font-weight: bold;
-  font-size: 10px;
-  line-height: 13px;
+  font-size: 14px;
+  line-height: 18px;
 }
 
 @media (max-width: 1200px) {
