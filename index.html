@@ -6,6 +6,32 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Best Tour Plan - Hotel Booking</title>
+
+  <head>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=5d99d11d-3878-429a-90fc-417ccd28317b&lang=ru_RU"
+      type="text/javascript">
+      </script>
+    <script type="text/javascript">
+      ymaps.ready(init);
+      function init() {
+        var myMap = new ymaps.Map("map", {
+          center: [53.90810731, 27.54813973],
+          zoom: 14
+        });
+        myGeoObject = new ymaps.GeoObject(),
+          myPieChart = new ymaps.Placemark();
+        myMap.geoObjects
+          .add(myGeoObject)
+          .add(myPieChart)
+          .add(new ymaps.Placemark([53.90810731, 27.54813973], {
+            balloonContent: 'Grand Hilton Hotel'
+          }, {
+            preset: 'islands#icon',
+            iconColor: '#EC1F46'
+          }))
+      }
+    </script>
+  </head>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;600;700&display=swap" rel="stylesheet">
@@ -122,6 +148,45 @@
           <!-- /.swiper -->
         </div>
         <!-- /.slider -->
+        <div class="hotel-grid__right">
+          <div class="booking">
+            <div class="booking__info">
+              <div class="price">
+                <span class="price__start">price starts as</span>
+                <strong class="price__price-tag">$ 8,500</strong>
+                <span class="price__per-room">per room / night</span>
+              </div>
+              <!-- /.price -->
+              <div class="person-room">
+                <div class="person-room__text">
+                  <img src="img/booking/guest.svg" alt="Guests" class="person-room__icon">
+                  <span class="person-room__discription">2 x Guests</span>
+                </div>
+                <div class="person-room__text">
+                  <img src="img/booking/room.svg" alt="Rooms" class="person-room__icon">
+                  <span class="person-room__discription">1 x Room</span>
+                </div>
+              </div>
+              <!-- /.person-room -->
+            </div>
+            <div class="call-center">
+              <span class="call-center__text">Quick Booking</span>
+              <a class="call-center__number" href="tel:12100"><img src="img/booking/phone.svg" alt="Phone"
+                  class="call-center__icon">
+                <span class="call-center__num">12100</span>
+              </a>
+            </div>
+            <!-- /.booking-call-center -->
+            <button class="button booking-button">View Other Options</button>
+            <!-- /.booking-buttom -->
+          </div>
+          <!-- /.booking -->
+          <div id="map" class="map">
+
+          </div>
+          <!-- /.map -->
+        </div>
+        <!-- /.hotel-grid__right -->
       </div>
       <!-- /.hotel-grid -->
 
